@@ -10,5 +10,8 @@ document.getElementById('primeiroFilhoDoFilho').innerText = 'Primeiro filho do f
 // 4. Acesse o primeiroFilho a partir de pai.
 document.getElementById('pai').firstElementChild;
 
-// Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+// 5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
 console.log(document.getElementById('elementoOndeVoceEsta').previousElementSibling);
+
+// 6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
