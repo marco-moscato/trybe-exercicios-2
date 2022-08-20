@@ -50,10 +50,11 @@ document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentEleme
 
 // PARTE 3
 // 5. Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
-const pai4 = document.getElementById('pai');
-indicesARemover = [0, 2, 3, 4];
-for (let i = 0; i < indicesARemover.length; i += 1) {
-    pai4.removeChild(pai4.children[i]);
+const pai4 = document.getElementById('pai').children;
+// const filho4 = pai4.children;
+const listaElementos = [0, 2, 3, 4];
+for (i = 0; i < listaElementos.length; i += 1) {
+    pai4.removeChild(listaElementos[i]);
 }
-console.log(pai4);
+
 
