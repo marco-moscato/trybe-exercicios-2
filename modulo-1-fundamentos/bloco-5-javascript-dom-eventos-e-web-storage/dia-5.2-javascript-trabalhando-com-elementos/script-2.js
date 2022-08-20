@@ -58,6 +58,13 @@ const createParagraph = () => {
 //     callClass.appendChild(createSection);
 // }
 
+// 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+const createImage = () => {
+    const createImage = createElement('img');
+    createImage.src = 'https://picsum.photos/200';
+    createImage.className = 'small-image';
+    callTag('section').appendChild(createImage);
+}
 
 
 // Function calls
@@ -67,4 +74,5 @@ createMain();
 createSection();
 createParagraph();
 // createSection2();
+createImage();
 
