@@ -44,3 +44,6 @@ const criaFilho3 = document.createElement('section');
 const filho3 = criaFilho3.id = 'filhoDoPrimeiroFilhoDoFilho';
 pai3.appendChild(criaFilho3);
 console.log(pai3);
+
+// 4. A partir desse filho criado, acesse terceiroFilho.
+console.log(document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling);
