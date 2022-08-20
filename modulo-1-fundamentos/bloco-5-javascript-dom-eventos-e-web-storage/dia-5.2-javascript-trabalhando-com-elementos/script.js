@@ -37,3 +37,10 @@ const criaFilho2 = document.createElement('section');
 const filho2 = criaFilho2.id = 'filhoElementoOndeVoceEsta';
 pai2.appendChild(criaFilho2);
 console.log(pai2);
+
+// 3. Crie um filho para primeiroFilhoDoFilho.
+const pai3 = document.getElementById('primeiroFilhoDoFilho');
+const criaFilho3 = document.createElement('section');
+const filho3 = criaFilho3.id = 'filhoDoPrimeiroFilhoDoFilho';
+pai3.appendChild(criaFilho3);
+console.log(pai3);
