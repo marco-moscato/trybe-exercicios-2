@@ -33,10 +33,19 @@ const createSection = () => {
     // console.log(callTag('main'));
 }
 
+// 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+const createParagraph = () => {
+    const createParagraph = createElement('p');
+    createParagraph.innerText = 'Texto do parágrafo filho da <section>';
+    callTag('section').appendChild(createParagraph);
+}
+
+
 
 // Function calls
 // window.onload = 
     createTitle();
     createMain();
     createSection();
+    createParagraph();
 
