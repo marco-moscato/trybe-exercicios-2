@@ -8,6 +8,7 @@ document.getElementById('elementoOndeVoceEsta').parentElement.style.background =
 document.getElementById('primeiroFilhoDoFilho').innerText = 'Primeiro filho do filho';
 
 // 4. Acesse o primeiroFilho a partir de pai.
-console.log(document.getElementById('pai').firstElementChild);
+document.getElementById('pai').firstElementChild;
 
-
+// Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+console.log(document.getElementById('elementoOndeVoceEsta').previousElementSibling);
