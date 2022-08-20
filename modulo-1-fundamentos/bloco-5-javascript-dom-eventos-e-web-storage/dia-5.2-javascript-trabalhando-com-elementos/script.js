@@ -29,21 +29,31 @@ const pai = document.getElementById('pai');
 const criaFilho = document.createElement('section');
 const filho = criaFilho.id = 'irmaoElementoOndeVoceEsta';
 pai.appendChild(criaFilho);
-console.log(pai);
+// console.log(pai);
 
 // 2. Crie um filho para elementoOndeVoceEsta.
 const pai2 = document.getElementById('elementoOndeVoceEsta');
 const criaFilho2 = document.createElement('section');
 const filho2 = criaFilho2.id = 'filhoElementoOndeVoceEsta';
 pai2.appendChild(criaFilho2);
-console.log(pai2);
+// console.log(pai2);
 
 // 3. Crie um filho para primeiroFilhoDoFilho.
 const pai3 = document.getElementById('primeiroFilhoDoFilho');
 const criaFilho3 = document.createElement('section');
 const filho3 = criaFilho3.id = 'filhoDoPrimeiroFilhoDoFilho';
 pai3.appendChild(criaFilho3);
-console.log(pai3);
+// console.log(pai3);
 
 // 4. A partir desse filho criado, acesse terceiroFilho.
-console.log(document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling);
+document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling;
+
+// PARTE 3
+// 5. Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+const pai4 = document.getElementById('pai');
+indicesARemover = [0, 2, 3, 4];
+for (let i = 0; i < indicesARemover.length; i += 1) {
+    pai4.removeChild(pai4.children[i]);
+}
+console.log(pai4);
+
