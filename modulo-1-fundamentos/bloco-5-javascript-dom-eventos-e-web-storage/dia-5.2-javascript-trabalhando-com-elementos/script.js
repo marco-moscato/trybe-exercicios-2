@@ -27,12 +27,13 @@ document.getElementById('pai').children[2];
 // 1. Crie um irmão para elementoOndeVoceEsta.
 const pai = document.getElementById('pai');
 const criaFilho = document.createElement('section');
-const filho = criaFilho.className = 'irmaoElementoOndeVoceEsta';
+const filho = criaFilho.id = 'irmaoElementoOndeVoceEsta';
 pai.appendChild(criaFilho);
 console.log(pai);
 
 // 2. Crie um filho para elementoOndeVoceEsta.
 const pai2 = document.getElementById('elementoOndeVoceEsta');
-const filho2 = criaFilho.className = 'filhoElementoOndeVoceEsta';
-pai2.appendChild(criaFilho);
+const criaFilho2 = document.createElement('section');
+const filho2 = criaFilho2.id = 'filhoElementoOndeVoceEsta';
+pai2.appendChild(criaFilho2);
 console.log(pai2);
