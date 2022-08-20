@@ -25,8 +25,18 @@ const createMain = () => {
     // console.log(callTag('body'));
 }
 
+// 3. Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+const createSection = () => {
+    const createSection = createElement('section');
+    createSection.className = 'center-content';
+    callTag('main').appendChild(createSection);
+    // console.log(callTag('main'));
+}
+
+
 // Function calls
 // window.onload = 
     createTitle();
     createMain();
+    createSection();
 
