@@ -29,23 +29,32 @@ const createMain = () => {
 const createSection = () => {
     const createSection = createElement('section');
     createSection.className = 'center-content';
-    callTag('main').appendChild(createSection);
-    // console.log(callTag('main'));
+     // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+     callTag('main').appendChild(createSection);
+     console.log(callTag('main'));
 }
-
+    
 // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 const createParagraph = () => {
     const createParagraph = createElement('p');
     createParagraph.innerText = 'Texto do parágrafo filho da <section>';
     callTag('section').appendChild(createParagraph);
 }
-
+    
+// 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+const createSection2 = () => {
+    const callClass = document.getElementsByClassName('main-content')[0];
+    const createSection = createElement('section');    
+    createSection.className = 'left-content';
+    callClass.appendChild(createSection);
+}
 
 
 // Function calls
 // window.onload = 
-    createTitle();
-    createMain();
-    createSection();
-    createParagraph();
+createTitle();
+createMain();
+createSection();
+createParagraph();
+createSection2();
 
