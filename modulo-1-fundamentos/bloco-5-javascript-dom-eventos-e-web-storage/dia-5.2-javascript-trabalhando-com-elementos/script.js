@@ -1,3 +1,4 @@
+// PARTE 1
 // 1. Acesse o elemento elementoOndeVoceEsta.
 document.getElementById('elementoOndeVoceEsta');
 
@@ -20,4 +21,12 @@ document.getElementById('elementoOndeVoceEsta').nextSibling;
 document.getElementById ('elementoOndeVoceEsta').nextElementSibling;
 
 // 8. Agora acesse o terceiroFilho a partir de pai.
-console.log(document.getElementById('pai').children[2]);
+document.getElementById('pai').children[2];
+
+// PARTE 2
+// 1. Crie um irmão para elementoOndeVoceEsta.
+const pai = document.getElementById('pai');
+const criaFilho = document.createElement('section');
+const filho = criaFilho.innerText = 'irmaoElementoOndeVoceEsta';
+pai.appendChild(criaFilho);
+console.log(pai);
