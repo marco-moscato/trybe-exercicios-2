@@ -66,9 +66,9 @@ const createImage = () => {
 // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 const createList = () => {
     const createList = createElement('ul');
-    unList = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-    for (let i = 0; i < unList.length; i += 1) {
-        createList.li = unList[i];
+    list = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+    for (let i = 0; i < list.length; i += 1) {
+        createList.li += list[i].push;
         callClass('right-content').appendChild(creatList);
     }
 }
