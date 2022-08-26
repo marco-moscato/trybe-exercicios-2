@@ -9,11 +9,11 @@ const justHired = (nomeCompleto) => {
 }
 // console.log(justHired('Pedro Guerra'));
 
-const newEmployees = (justHired()) => {
+const newEmployees = () => {
     const employees = {
       id1: justHired('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-    //   id2: '', // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-    //   id3: '', // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+      id2: justHired('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
+      id3: justHired('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
     }
     return employees;
   };
